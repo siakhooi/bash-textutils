@@ -19,6 +19,12 @@ cp -vr $SOURCE/bin $TARGET/usr
 mkdir -p $TARGET/usr/share/man/man1/
 pandoc $SOURCE/md/siakhooi-devutils-indent.1.md -s -t man | gzip -9 >$TARGET/usr/share/man/man1/siakhooi-devutils-indent.1.gz
 
+## Create links
+(
+  cd $TARGET/usr/share/man/man1/
+  ln -s siakhooi-devutils-indent.1.gz indent.1.gz
+)
+
 dpkg --build $TARGET
 dpkg-name ${TARGET}.deb
 
