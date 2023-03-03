@@ -1,4 +1,4 @@
-Package: indent
+Package: siakhooi-devutils-indent
 Version: 1.0.0
 Maintainer: Siak Hooi <siakhooi@gmail.com>
 Depends: coreutils, bash
