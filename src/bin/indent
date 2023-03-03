@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: $(basename "$0") prefix"
+    exit 0
+fi
+
+PREFIX=$1
+
+INFILE=/dev/stdin
+
+while read -r line; do
+  echo "$PREFIX${line}"
+done < "$INFILE"
