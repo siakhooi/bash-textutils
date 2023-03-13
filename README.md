@@ -8,6 +8,10 @@ Package `siakhooi-devutils-indent` to indent line of texts with a prefix.
 cat filename1 | indent 'prefix'
 ```
 
+## Sample
+
+![sample](sample.gif "Sample")
+
 ## Quick Start
 
 ```bash
