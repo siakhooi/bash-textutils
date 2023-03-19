@@ -4,7 +4,7 @@ build:
 	./build.sh
 
 test-man:
-	pandoc src/md/indent.1.md -s -t man | man -l -
+	pandoc src/md/siakhooi-devutils-indent.1.md -s -t man | man -l -
 
 test-install:
 	sudo apt install -f ./indent_1.0.0_amd64.deb 
