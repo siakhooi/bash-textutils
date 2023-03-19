@@ -25,7 +25,7 @@ pandoc $SOURCE/md/siakhooi-devutils-indent.1.md -s -t man | gzip -9 >$TARGET/usr
   ln -s siakhooi-devutils-indent.1.gz indent.1.gz
 )
 
-dpkg --build $TARGET
+dpkg-deb --build -Zxz $TARGET
 dpkg-name ${TARGET}.deb
 
 DEBFILE=$(ls ./*.deb)
