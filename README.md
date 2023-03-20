@@ -6,6 +6,8 @@ Package `siakhooi-textutils` to indent line of texts with a prefix.
 
 ```bash
 cat filename1 | indent 'prefix'
+cat filename1 | prefix 'prefix'
+cat filename1 | suffix 'suffix'
 ```
 
 ## Sample

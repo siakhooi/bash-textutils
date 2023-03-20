@@ -23,7 +23,7 @@ config:
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 11
+  rows: 21
 
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -204,6 +204,88 @@ records:
   - delay: 100
     content: ' '
   - delay: 100
+    content: p
+  - delay: 100
+    content: r
+  - delay: 100
+    content: e
+  - delay: 100
+    content: f
+  - delay: 100
+    content: i
+  - delay: 100
+    content: x
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: ''''
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: ''''
+  - delay: 100
+    content: "\r\n >>>>> DISTRIB_ID=Ubuntu\r\n >>>>> DISTRIB_RELEASE=20.04\r\n >>>>> DISTRIB_CODENAME=focal\r\n >>>>> DISTRIB_DESCRIPTION=\"Ubuntu 20.04.5 LTS\"\r\n"
+  - delay: 10
+    content: '$ '
+  - delay: 1000
+    content: c
+  - delay: 100
+    content: a
+  - delay: 100
+    content: t
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: /
+  - delay: 100
+    content: e
+  - delay: 100
+    content: t
+  - delay: 100
+    content: c
+  - delay: 100
+    content: /
+  - delay: 100
+    content: l
+  - delay: 100
+    content: s
+  - delay: 100
+    content: b
+  - delay: 100
+    content: '-'
+  - delay: 100
+    content: r
+  - delay: 100
+    content: e
+  - delay: 100
+    content: l
+  - delay: 100
+    content: e
+  - delay: 100
+    content: a
+  - delay: 100
+    content: s
+  - delay: 100
+    content: e
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: '|'
+  - delay: 100
+    content: ' '
+  - delay: 100
     content: i
   - delay: 100
     content: 'n'
@@ -237,6 +319,88 @@ records:
     content: ''''
   - delay: 100
     content: "\r\n >>>>> DISTRIB_ID=Ubuntu\r\n >>>>> DISTRIB_RELEASE=20.04\r\n >>>>> DISTRIB_CODENAME=focal\r\n >>>>> DISTRIB_DESCRIPTION=\"Ubuntu 20.04.5 LTS\"\r\n"
+  - delay: 10
+    content: '$ '
+  - delay: 1000
+    content: c
+  - delay: 100
+    content: a
+  - delay: 100
+    content: t
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: /
+  - delay: 100
+    content: e
+  - delay: 100
+    content: t
+  - delay: 100
+    content: c
+  - delay: 100
+    content: /
+  - delay: 100
+    content: l
+  - delay: 100
+    content: s
+  - delay: 100
+    content: b
+  - delay: 100
+    content: '-'
+  - delay: 100
+    content: r
+  - delay: 100
+    content: e
+  - delay: 100
+    content: l
+  - delay: 100
+    content: e
+  - delay: 100
+    content: a
+  - delay: 100
+    content: s
+  - delay: 100
+    content: e
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: '|'
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: s
+  - delay: 100
+    content: u
+  - delay: 100
+    content: f
+  - delay: 100
+    content: f
+  - delay: 100
+    content: i
+  - delay: 100
+    content: x
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: ''''
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: '>'
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: ''''
+  - delay: 100
+    content: "\r\nDISTRIB_ID=Ubuntu >>>>> \r\nDISTRIB_RELEASE=20.04 >>>>> \r\nDISTRIB_CODENAME=focal >>>>> \r\nDISTRIB_DESCRIPTION=\"Ubuntu 20.04.5 LTS\" >>>>> \r\n"
   - delay: 10
     content: "$ "
   - delay: 3000

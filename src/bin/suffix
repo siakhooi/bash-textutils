@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: $(basename "$0") suffix"
+    exit 0
+fi
+
+SUFFIX=$1
+
+INFILE=/dev/stdin
+
+while read -r line; do
+    echo "${line}$SUFFIX"
+done <"$INFILE"

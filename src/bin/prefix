@@ -10,5 +10,5 @@ PREFIX=$1
 INFILE=/dev/stdin
 
 while read -r line; do
-  echo "$PREFIX${line}"
-done < "$INFILE"
+    echo "$PREFIX${line}"
+done <"$INFILE"

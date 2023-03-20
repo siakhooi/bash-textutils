@@ -4,10 +4,11 @@ build:
 	./build.sh
 
 test-man:
-	pandoc src/md/siakhooi-textutils-indent.1.md -s -t man | man -l -
+	pandoc src/md/suffix.1.md -s -t man | man -l -
+	pandoc src/md/prefix.1.md -s -t man | man -l -
 
 test-install:
-	sudo apt install -f ./siakhooi-textutils_1.1.0_amd64.deb
+	sudo apt install -f ./siakhooi-textutils_1.2.0_amd64.deb
 	sudo apt remove -y indent
 
 delete-tags:
