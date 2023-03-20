@@ -4,10 +4,10 @@ build:
 	./build.sh
 
 test-man:
-	pandoc src/md/siakhooi-devutils-indent.1.md -s -t man | man -l -
+	pandoc src/md/siakhooi-textutils-indent.1.md -s -t man | man -l -
 
 test-install:
-	sudo apt install -f ./indent_1.0.0_amd64.deb 
+	sudo apt install -f ./siakhooi-textutils_1.1.0_amd64.deb
 	sudo apt remove -y indent
 
 delete-tags:
@@ -15,7 +15,7 @@ delete-tags:
 	git push --delete origin 1.0.0
 
 terminalizer:
-	terminalizer render docs/terminalizer-indent
+	terminalizer render docs/terminalizer-textutils
 
 docker-ubuntu-bash:
 	docker run --rm -it -w /working -v $$(pwd):/working ubuntu bash

@@ -1,4 +1,4 @@
-% INDENT(1) Siak Hooi DevUtils 1.1.0 |Text Utils
+% INDENT(1) Siak Hooi TextUtils 1.1.0 |Text Utils
 % Siak Hooi
 % March 2023
 
@@ -20,4 +20,4 @@ $ cat filename1 | **indent** '>>>>\ '
 MIT
 
 # BUGS
-Report bugs at https://github.com/siakhooi/bash-devutils-indent/issues.
+Report bugs at https://github.com/siakhooi/bash-textutils/issues.

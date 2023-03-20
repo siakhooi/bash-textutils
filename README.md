@@ -1,6 +1,6 @@
-# bash-devutils-indent
+# bash-textutils
 
-Package `siakhooi-devutils-indent` to indent line of texts with a prefix.
+Package `siakhooi-textutils` to indent line of texts with a prefix.
 
 ## Commands
 
@@ -19,7 +19,7 @@ $ sudo curl -L https://siakhooi.github.io/apt/siakhooi-apt.list | sudo tee /etc/
 $ sudo curl -L https://siakhooi.github.io/apt/siakhooi-apt.gpg  | sudo tee /usr/share/keyrings/siakhooi-apt.gpg > /dev/null
 $ sudo apt update
 
-$ sudo apt install siakhooi-devutils-indent
+$ sudo apt install siakhooi-textutils
 ```
 
 ## Deployments

@@ -1,7 +1,7 @@
-Package: siakhooi-devutils-indent
-Version: 1.0.2
+Package: siakhooi-textutils
+Version: 1.1.0
 Maintainer: Siak Hooi <siakhooi@gmail.com>
 Depends: coreutils, bash
 Architecture: amd64
-Homepage: <https://github.com/siakhooi/bash-devutils-indent>
+Homepage: <https://github.com/siakhooi/bash-textutils>
 Description: command to indent line of texts with a prefix.

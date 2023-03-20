@@ -17,12 +17,12 @@ cp -vr $SOURCE/bin $TARGET/usr
 
 # Man Pages
 mkdir -p $TARGET/usr/share/man/man1/
-pandoc $SOURCE/md/siakhooi-devutils-indent.1.md -s -t man | gzip -9 >$TARGET/usr/share/man/man1/siakhooi-devutils-indent.1.gz
+pandoc $SOURCE/md/siakhooi-textutils-indent.1.md -s -t man | gzip -9 >$TARGET/usr/share/man/man1/siakhooi-textutils-indent.1.gz
 
 ## Create links
 (
   cd $TARGET/usr/share/man/man1/
-  ln -s siakhooi-devutils-indent.1.gz indent.1.gz
+  ln -s siakhooi-textutils-indent.1.gz indent.1.gz
 )
 
 dpkg-deb --build -Zxz $TARGET

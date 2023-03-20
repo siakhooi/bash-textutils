@@ -11,9 +11,9 @@ TARGETPATH=docs/pool/main/binary-amd64
 TARGETURL=https://${PUBLIC_TO_APT_GITHUB_TOKEN}@github.com/siakhooi/apt.git
 TARGETBRANCH=main
 TARGETDIR=apt
-TARGET_GIT_EMAIL=devutils-echo-colors@siakhooi.github.io
-TARGET_GIT_USERNAME=devutils-echo-colors
-TARGET_COMMIT_MESSAGE="bash-devutils-echo-colors: Auto deploy [$(date)]"
+TARGET_GIT_EMAIL=textutils@siakhooi.github.io
+TARGET_GIT_USERNAME=textutils
+TARGET_COMMIT_MESSAGE="bash-textutils: Auto deploy [$(date)]"
 
 (
   cd $TMPDIR
