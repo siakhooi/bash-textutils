@@ -10,9 +10,7 @@ cat filename1 | prefix 'prefix'
 cat filename1 | suffix 'suffix'
 ```
 
-## Sample
-
-![sample](sample.gif "Sample")
+👉Visit [Screenshots](screenshots/Screenshots.md) of each commands.
 
 ## Quick Start
 
