@@ -4,8 +4,9 @@ build:
 	./build.sh
 
 test-man:
-	pandoc src/md/suffix.1.md -s -t man | man -l -
-	pandoc src/md/prefix.1.md -s -t man | man -l -
+#	pandoc src/md/suffix.1.md -s -t man | man -l -
+#	pandoc src/md/prefix.1.md -s -t man | man -l -
+	pandoc src/md/is-true.1.md -s -t man | man -l -
 
 test-install:
 	sudo apt install -f ./siakhooi-textutils_1.2.0_amd64.deb
@@ -18,10 +19,21 @@ delete-tags:
 terminalizer:
 	terminalizer render docs/terminalizer-textutils
 
-docker-ubuntu-bash:
-	docker run --rm -it -w /working -v $$(pwd):/working ubuntu bash
+run-in-container:
 #	. in-container-init.sh
 
-docker-debian-bash:
-	docker run --rm -it -w /working -v $$(pwd):/working debian bash
-#	. in-container-init.sh
+test-in-container:
+	cat /etc/lsb-release | prefix ' >>>>> '
+	cat /etc/lsb-release | suffix ' >>>>> '
+	cat /etc/lsb-release | indent ' >>>>> '
+	is-true yes
+	is-true Y
+	is-true on
+	is-true no
+	is-true no1
+	is-false no
+	is-false N
+	is-false off
+	is-false yes
+	is-false yes1
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+[[ $# -ne 1 ]] && exit 1
+
+T=$(echo "$*" | xargs | tr '[:lower:]' '[:upper:]')
+
+[[ $T == 'N' ]] && exit 0
+[[ $T == 'NO' ]] && exit 0
+[[ $T == 'F' ]] && exit 0
+[[ $T == 'FALSE' ]] && exit 0
+[[ $T == 'OFF' ]] && exit 0
+[[ $T == '0' ]] && exit 0
+
+exit 1

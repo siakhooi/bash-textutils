@@ -1,6 +1,6 @@
 # bash-textutils
 
-Package `siakhooi-textutils` to indent line of texts with a prefix.
+Package `siakhooi-textutils` to transform or evaluate text.
 
 ## Commands
 
@@ -8,6 +8,9 @@ Package `siakhooi-textutils` to indent line of texts with a prefix.
 cat filename1 | indent 'prefix'
 cat filename1 | prefix 'prefix'
 cat filename1 | suffix 'suffix'
+
+is-true value
+is-false value
 ```
 
 👉Visit [Screenshots](screenshots/Screenshots.md) of each commands.
