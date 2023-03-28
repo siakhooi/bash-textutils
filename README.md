@@ -4,16 +4,12 @@ Package `siakhooi-textutils` to transform or evaluate text.
 
 ## Commands
 
-```bash
-cat filename1 | indent 'prefix'
-cat filename1 | prefix 'prefix'
-cat filename1 | suffix 'suffix'
-
-is-true value
-is-false value
-```
-
-👉Visit [Screenshots](screenshots/Screenshots.md) of each commands.
+| Command             | Description                          | Doc                       |
+| ------------------- | ------------------------------------ | ------------------------- |
+| `prefix` prefixText | prepend each line with `prefixText`  | [📗Doc](docs/prefix.md)   |
+| `suffix` suffixText | append each line with `suffixText`   | [📗Doc](docs/suffix.md)   |
+| `is-true` value     | Evaluate `value` if is a true value  | [📗Doc](docs/is-true.md)  |
+| `is-false` value    | Evaluate `value` if is a false value | [📗Doc](docs/is-false.md) |
 
 ## Quick Start
 
