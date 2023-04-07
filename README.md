@@ -25,3 +25,29 @@ $ sudo apt install siakhooi-textutils
 
 - <https://siakhooi.github.io/apt/>
 - <https://siakhooi.jfrog.io/ui/packages>
+
+## Badges
+
+![GitHub](https://img.shields.io/github/license/siakhooi/bash-textutils?logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/siakhooi/bash-textutils?logo=github)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/siakhooi/bash-textutils?logo=github)
+![GitHub issues](https://img.shields.io/github/issues/siakhooi/bash-textutils?logo=github)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/siakhooi/bash-textutils?logo=github)
+![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/siakhooi/bash-textutils?logo=github)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/siakhooi/bash-textutils?logo=github)
+![GitHub top language](https://img.shields.io/github/languages/top/siakhooi/bash-textutils?logo=github)
+![GitHub language count](https://img.shields.io/github/languages/count/siakhooi/bash-textutils?logo=github)
+![Lines of code](https://img.shields.io/tokei/lines/github/siakhooi/bash-textutils?logo=github)
+![GitHub repo size](https://img.shields.io/github/repo-size/siakhooi/bash-textutils?logo=github)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/siakhooi/bash-textutils?logo=github)
+![Workflow](https://img.shields.io/badge/Workflow-github-purple)
+![workflow](https://github.com/siakhooi/bash-textutils/actions/workflows/workflow-build-with-quality-checks.yml/badge.svg)
+![workflow](https://github.com/siakhooi/bash-textutils/actions/workflows/workflow-deployments.yml/badge.svg)
+![Release](https://img.shields.io/badge/Release-github-purple)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/siakhooi/bash-textutils?label=GPR%20release&logo=github)
+![GitHub all releases](https://img.shields.io/github/downloads/siakhooi/bash-textutils/total?color=33cb56&logo=github)
+![GitHub Release Date](https://img.shields.io/github/release-date/siakhooi/bash-textutils?logo=github)
+
+[![Generic badge](https://img.shields.io/badge/Funding-BuyMeACoffee-33cb56.svg)](https://www.buymeacoffee.com/siakhooi)
+[![Generic badge](https://img.shields.io/badge/Funding-Ko%20Fi-33cb56.svg)](https://ko-fi.com/siakhooi)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=siakhooi.bash-textutils&left_color=grey&right_color=#33cb56)
