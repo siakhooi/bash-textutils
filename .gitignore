@@ -1,4 +1,3 @@
 target
 *.deb
 *.deb.sha*sum
-run-test.actual.log

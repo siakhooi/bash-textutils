@@ -1,5 +1,6 @@
 clean:
-	rm -rf target *.deb run-test.actual.log
+	rm -rf target *.deb *.deb.sha*sum
+
 build:
 	./build.sh
 
@@ -11,6 +12,8 @@ test-man:
 run-in-container:
 #	. in-container-init.sh
 
+generate-test-output:
+	test/generate-test-output.sh test/expected
 test:
-	test/run-test.sh > run-test.actual.log
-	diff test/run-test.expected.log run-test.actual.log
+	test/run-test.sh
+
