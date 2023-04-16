@@ -6,13 +6,18 @@
 prefix - add a prefix to all lines of text from the stdin.
 
 # SYNOPSIS
-**prefix** prefix
+**prefix** prefix [inputFile]
 
 # DESCRIPTION
 Programs that add a prefix to each lines of text.
+If **inputFile** is omitted, **prefix** will read from stdin.
 
 # EXAMPLES
 $ cat filename1 | **prefix** '>>>>\ '  
+\>\>\>\> This is line 1 in filename1  
+\>\>\>\> This is line 2 in filename1  
+
+$ **prefix** '>>>>\ ' filename1  
 \>\>\>\> This is line 1 in filename1  
 \>\>\>\> This is line 2 in filename1  
 

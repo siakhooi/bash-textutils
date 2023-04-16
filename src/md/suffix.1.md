@@ -6,15 +6,21 @@
 suffix - add a suffix to all lines of text from the stdin.
 
 # SYNOPSIS
-**suffix** suffix
+**suffix** suffix [inputFile]
 
 # DESCRIPTION
 Programs that add a suffix to each lines of text.
+If **inputFile** is omitted, **suffix** will read from stdin.
 
 # EXAMPLES
 $ cat filename1 | **suffix** '>>>>\ '  
 This is line 1 in filename1 \>\>\>\>  
 This is line 2 in filename1 \>\>\>\>
+
+$ **suffix** '>>>>\ ' filename1  
+This is line 1 in filename1 \>\>\>\>  
+This is line 2 in filename1 \>\>\>\>
+
 
 # LICENSE
 MIT

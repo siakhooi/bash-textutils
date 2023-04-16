@@ -1,0 +1,33 @@
+SUFFIX(1)                                             Text Utils                                            SUFFIX(1)
+
+NAME
+       suffix - add a suffix to all lines of text from the stdin.
+
+SYNOPSIS
+       suffix suffix [inputFile]
+
+DESCRIPTION
+       Programs that add a suffix to each lines of text.  If inputFile is omitted, suffix will read from stdin.
+
+EXAMPLES
+       $ cat filename1 | suffix `>>>> '
+       This is line 1 in filename1 >>>>
+       This is line 2 in filename1 >>>>
+
+       $ suffix `>>>> ' filename1
+       This is line 1 in filename1 >>>>
+       This is line 2 in filename1 >>>>
+
+LICENSE
+       MIT
+
+BUGS
+       Report bugs at https://github.com/siakhooi/bash-textutils/issues.
+
+SEE ALSO
+       prefix(1), siakhooi-textutils(1)
+
+AUTHORS
+       Siak Hooi.
+
+Siak Hooi TextUtils 1.1.0                             March 2023                                            SUFFIX(1)

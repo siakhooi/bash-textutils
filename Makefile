@@ -1,19 +1,19 @@
+info:
+
 clean:
 	rm -rf target *.deb *.deb.sha*sum
 
 build:
 	./build.sh
 
-test-man:
-#	pandoc src/md/suffix.1.md -s -t man | man -l -
-#	pandoc src/md/prefix.1.md -s -t man | man -l -
-	pandoc src/md/is-true.1.md -s -t man | man -l -
-
 run-in-container:
-#	. in-container-init.sh
+	. in-container-init.sh
 
-generate-test-output:
-	test/generate-test-output.sh test/expected
-test:
-	test/run-test.sh
+generate-test-outputs:
+	test/generate-test-outputs.sh test/expected
 
+run-tests:
+	test/run-tests.sh
+
+test-man:
+	pandoc src/md/is-true.1.md -s -t man | man -l -
