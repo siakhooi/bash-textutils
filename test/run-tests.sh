@@ -3,7 +3,7 @@
 EXPECTED_DIRECTORY=test/expected
 ACTUAL_DIRECTORY=$(mktemp -d)
 
-test/generate-test-output.sh "$ACTUAL_DIRECTORY"
+test/generate-test-outputs.sh "$ACTUAL_DIRECTORY"
 
 diff $EXPECTED_DIRECTORY $ACTUAL_DIRECTORY 
 

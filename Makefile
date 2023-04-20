@@ -9,9 +9,9 @@ build:
 run-in-container:
 	. in-container-init.sh
 
-generate-test-outputs:
+generate-test-outputs-in-docker:
 	test/generate-test-outputs.sh test/expected
-
+	sudo chown siakhooi:siakhooi test/expected/*
 run-tests:
 	test/run-tests.sh
 

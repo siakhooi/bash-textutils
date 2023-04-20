@@ -1,5 +1,5 @@
 Package: siakhooi-textutils
-Version: 1.6.0
+Version: 1.6.1
 Maintainer: Siak Hooi <siakhooi@gmail.com>
 Depends: coreutils, bash, findutils
 Architecture: amd64
