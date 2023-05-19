@@ -14,6 +14,7 @@ cp -vr $SOURCE/DEBIAN $TARGET
 # Binary File
 mkdir -p $TARGET/usr/bin
 cp -vr $SOURCE/bin $TARGET/usr
+chmod 755 $TARGET/usr/bin/*
 
 # Man Pages
 mkdir -p $TARGET/usr/share/man/man1/
@@ -22,7 +23,7 @@ for file in $fileList; do
   pandoc $SOURCE/md/$file.md -s -t man | gzip -9 >$TARGET/usr/share/man/man1/$file.gz
 done
 
-dpkg-deb --build -Zxz $TARGET
+fakeroot dpkg-deb --build -Zxz $TARGET
 dpkg-name ${TARGET}.deb
 
 DEBFILE=$(ls ./*.deb)
