@@ -24,7 +24,6 @@ $ sudo apt install siakhooi-textutils
 ## Deployments
 
 - <https://siakhooi.github.io/apt/>
-- <https://siakhooi.jfrog.io/ui/packages>
 
 ## Badges
 
