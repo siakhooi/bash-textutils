@@ -1,0 +1,9 @@
+#!/bin/bash
+
+columns=$1
+
+OPTIONS=()
+
+[[ -n $columns ]] && OPTIONS+=(-N"$columns")
+
+column -s, -t "${OPTIONS[@]}"

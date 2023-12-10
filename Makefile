@@ -1,5 +1,9 @@
 info:
 
+prepare-on-codespace:
+	sudo apt update -y
+	sudo apt install -y shellcheck pandoc  fakeroot
+
 clean:
 	rm -rf target *.deb *.deb.sha*sum
 

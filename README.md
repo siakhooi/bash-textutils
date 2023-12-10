@@ -10,6 +10,7 @@ Package `siakhooi-textutils` to transform or evaluate text.
 | `suffix` suffixText | append each line with `suffixText`   | [📗Doc](docs/suffix.md)   |
 | `is-true` value     | Evaluate `value` if is a true value  | [📗Doc](docs/is-true.md)  |
 | `is-false` value    | Evaluate `value` if is a false value | [📗Doc](docs/is-false.md) |
+| `make-table` columns| Print CSV data from stdin into table using `columns` as headers||
 
 ## Quick Start
 
