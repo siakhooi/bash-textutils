@@ -8,7 +8,7 @@ setup(){
     outputExpected=$BATS_TEST_FILENAME.$BATS_TEST_DESCRIPTION.expected
     outputActual="$TEST_TEMP_DIR/$(basename "$BATS_TEST_FILENAME").$BATS_TEST_DESCRIPTION.actual"
 }
-@test "prefix-0" {
+@test "prefix-0-no-argument" {
 
     run bash -c "prefix | tee $outputActual"
     assert_output - <$outputExpected
@@ -21,15 +21,15 @@ setup(){
     run bash -c "prefix '>>>> ' $testDatafile1 | tee $outputActual"
     assert_output - <$outputExpected
 }
-@test "prefix-3" {
+@test "prefix-3-invalid-arguments" {
     run bash -c "prefix 'a' 'b' 'c' | tee $outputActual"
     assert_output - <$outputExpected
 }
-@test "prefix-4" {
+@test "prefix-4-non-exists-file" {
     run bash -c "prefix '>>>> ' ./non-exists-file | tee $outputActual"
     assert_output - <$outputExpected
 }
-@test "prefix-5" {
+@test "prefix-5-directory" {
     run bash -c "prefix '>>>> ' /etc | tee $outputActual"
     assert_output - <$outputExpected
 }
