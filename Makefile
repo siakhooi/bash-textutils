@@ -21,3 +21,8 @@ run-tests:
 
 test-man:
 	pandoc src/md/is-true.1.md -s -t man | man -l -
+
+bats-setup:
+	scripts/bats-test-setup.sh
+bats-run:
+	scripts/bats-test-run.sh

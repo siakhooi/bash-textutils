@@ -1,3 +1,4 @@
 target
 *.deb
 *.deb.sha*sum
+bats-test-*

@@ -19,14 +19,6 @@ for i in ${ALL_MAN_PAGES_1[@]}; do
     MANWIDTH=120 man --pager=cat "$i" >$OUTPUT_DIRECTORY/man_${i}.out
 done
 
-prefix                                > "$OUTPUT_DIRECTORY"/prefix_0.out 2>&1
-cat test/test-data-1 | prefix '>>>> ' > "$OUTPUT_DIRECTORY"/prefix_1.out 2>&1
-prefix '>>>> ' test/test-data-1       > "$OUTPUT_DIRECTORY"/prefix_2.out 2>&1
-prefix 'a' 'b' 'c'                    > "$OUTPUT_DIRECTORY"/prefix_3.out 2>&1
-prefix '>>>> ' ./non-exists-file      > "$OUTPUT_DIRECTORY"/prefix_4.out 2>&1
-prefix '>>>> ' /etc                   > "$OUTPUT_DIRECTORY"/prefix_5.out 2>&1
-prefix '>>>> ' test/test-data-2       > "$OUTPUT_DIRECTORY"/prefix_6.out 2>&1
-
 suffix                                > "$OUTPUT_DIRECTORY"/suffix_0.out 2>&1
 cat test/test-data-1 | suffix ' <<<<' > "$OUTPUT_DIRECTORY"/suffix_1.out 2>&1
 suffix ' <<<<' test/test-data-1       > "$OUTPUT_DIRECTORY"/suffix_2.out 2>&1
