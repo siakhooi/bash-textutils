@@ -19,8 +19,6 @@ for i in ${ALL_MAN_PAGES_1[@]}; do
     MANWIDTH=120 man --pager=cat "$i" >$OUTPUT_DIRECTORY/man_${i}.out
 done
 
-cat test/test-data-1 | prefix '[ ' | suffix ' ]' > "$OUTPUT_DIRECTORY"/prefix_suffix_1.out
-
 is-true Yes && echo "Yes, is true"  > "$OUTPUT_DIRECTORY"/is-true-on-true.out
 is-true on && echo "Yes, is true"  >> "$OUTPUT_DIRECTORY"/is-true-on-true.out
 is-true Y && echo "Yes, is true"   >> "$OUTPUT_DIRECTORY"/is-true-on-true.out

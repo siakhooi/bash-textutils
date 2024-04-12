@@ -2,8 +2,8 @@ setup(){
     load '../common-setup'
     common_setup
 
-    testDatafile1=$BATS_TEST_DIRNAME/test-data-1
-    testDatafile2=$BATS_TEST_DIRNAME/test-data-2
+    testDatafile1=$BATS_TEST_DIRNAME/../test-data/test-data-1
+    testDatafile2=$BATS_TEST_DIRNAME/../test-data/test-data-2
 
     outputExpected=$BATS_TEST_FILENAME.$BATS_TEST_DESCRIPTION.expected
     outputActual="$TEST_TEMP_DIR/$(basename "$BATS_TEST_FILENAME").$BATS_TEST_DESCRIPTION.actual"
