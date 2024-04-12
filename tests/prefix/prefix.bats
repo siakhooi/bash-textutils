@@ -34,6 +34,6 @@ setup(){
     assert_output - <$outputExpected
 }
 @test "prefix-6" {
-    run bash -c "prefix '>>>> ' test/test-data-2 | tee $outputActual"
+    run bash -c "prefix '>>>> ' $testDatafile2 | tee $outputActual"
     assert_output - <$outputExpected
 }

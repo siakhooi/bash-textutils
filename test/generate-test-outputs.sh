@@ -19,14 +19,6 @@ for i in ${ALL_MAN_PAGES_1[@]}; do
     MANWIDTH=120 man --pager=cat "$i" >$OUTPUT_DIRECTORY/man_${i}.out
 done
 
-suffix                                > "$OUTPUT_DIRECTORY"/suffix_0.out 2>&1
-cat test/test-data-1 | suffix ' <<<<' > "$OUTPUT_DIRECTORY"/suffix_1.out 2>&1
-suffix ' <<<<' test/test-data-1       > "$OUTPUT_DIRECTORY"/suffix_2.out 2>&1
-suffix 'a' 'b' 'c'                    > "$OUTPUT_DIRECTORY"/suffix_3.out 2>&1
-suffix ' <<<<' ./non-exists-file      > "$OUTPUT_DIRECTORY"/suffix_4.out 2>&1
-suffix ' <<<<' /etc                   > "$OUTPUT_DIRECTORY"/suffix_5.out 2>&1
-suffix ' <<<<' test/test-data-2       > "$OUTPUT_DIRECTORY"/suffix_6.out 2>&1
-
 cat test/test-data-1 | prefix '[ ' | suffix ' ]' > "$OUTPUT_DIRECTORY"/prefix_suffix_1.out
 
 is-true Yes && echo "Yes, is true"  > "$OUTPUT_DIRECTORY"/is-true-on-true.out
