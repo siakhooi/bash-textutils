@@ -5,7 +5,7 @@ prepare-on-codespace:
 	sudo apt install -y shellcheck pandoc  fakeroot
 
 clean:
-	rm -rf target *.deb *.deb.sha*sum test_helper .gitmodules
+	rm -rf target *.deb *.deb.sha*sum test_helper bats-test-*.log
 
 build:
 	./build.sh

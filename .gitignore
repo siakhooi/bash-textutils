@@ -1,4 +1,5 @@
 target
 *.deb
 *.deb.sha*sum
-/bats-test-*
+/bats-test-*.log
+test_helper

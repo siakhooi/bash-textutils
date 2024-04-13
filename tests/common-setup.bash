@@ -7,7 +7,7 @@ common_setup(){
     echo "PATH: $PATH" >>"$CUSTOM_LOG"
 
     if [[ -z $BATS_RUN_TMPDIR ]]; then
-        TEST_TEMP_DIR=/tmp/$CUSTOM_LOG 
+        TEST_TEMP_DIR="/tmp/bats-test-$TEST_RUN_NUMBER"
         mkdir -p $TEST_TEMP_DIR
     else
       TEST_TEMP_DIR=$BATS_RUN_TMPDIR
