@@ -2,37 +2,33 @@ setup(){
     load '../common-setup'
     common_setup
 
-    testDatafile1=$BATS_TEST_DIRNAME/../test-data/test-data-1
-    testDatafile2=$BATS_TEST_DIRNAME/../test-data/test-data-2
-
     outputExpected=$BATS_TEST_FILENAME.$BATS_TEST_DESCRIPTION.expected
-    outputActual="$TEST_TEMP_DIR/$(basename "$BATS_TEST_FILENAME").$BATS_TEST_DESCRIPTION.actual"
 }
 @test "suffix-0-no-argument" {
-    run bash -c "suffix | tee $outputActual"
+    run bash -c "suffix"
     assert_output - <$outputExpected
 }
 @test "suffix-1" {
-    run bash -c "cat $testDatafile1 | suffix ' <<<<' | tee $outputActual"
+    run bash -c "cat $testDatafile1 | suffix ' <<<<'"
     assert_output - <$outputExpected
 }
 @test "suffix-2" {
-    run bash -c "suffix ' <<<<' $testDatafile1 | tee $outputActual"
+    run bash -c "suffix ' <<<<' $testDatafile1"
     assert_output - <$outputExpected
 }
 @test "suffix-3-invalid-arguments" {
-    run bash -c "suffix 'a' 'b' 'c' | tee $outputActual"
+    run bash -c "suffix 'a' 'b' 'c'"
     assert_output - <$outputExpected
 }
 @test "suffix-4-non-exists-file" {
-    run bash -c "suffix ' <<<<' ./non-exists-file | tee $outputActual"
+    run bash -c "suffix ' <<<<' ./non-exists-file"
     assert_output - <$outputExpected
 }
 @test "suffix-5-directory" {
-    run bash -c "suffix ' <<<<' /etc | tee $outputActual"
+    run bash -c "suffix ' <<<<' /etc"
     assert_output - <$outputExpected
 }
 @test "suffix-6" {
-    run bash -c "suffix ' <<<<' $testDatafile2 | tee $outputActual"
+    run bash -c "suffix ' <<<<' $testDatafile2"
     assert_output - <$outputExpected
 }

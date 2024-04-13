@@ -15,4 +15,7 @@ common_setup(){
 
     echo "BATS_RUN_TMPDIR: $BATS_RUN_TMPDIR" >>"$CUSTOM_LOG"
     echo "TEST_TEMP_DIR: $TEST_TEMP_DIR" >>"$CUSTOM_LOG"
+
+    testDatafile1=$BATS_TEST_DIRNAME/../test-data/test-data-1
+    testDatafile2=$BATS_TEST_DIRNAME/../test-data/test-data-2
 }

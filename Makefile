@@ -2,7 +2,7 @@ info:
 
 prepare-on-codespace:
 	sudo apt update -y
-	sudo apt install -y shellcheck pandoc  fakeroot
+	sudo apt install -y shellcheck pandoc fakeroot
 
 clean:
 	rm -rf target *.deb *.deb.sha*sum test_helper bats-test-*.log
@@ -22,7 +22,7 @@ run-tests:
 test-man:
 	pandoc src/md/is-true.1.md -s -t man | man -l -
 
-bats-setup:
+prepare-bats-test:
 	scripts/bats-test-setup.sh
 bats-run:
 	scripts/bats-test-run.sh
