@@ -3,7 +3,7 @@ setup(){
     common_setup
 }
 test_value_expect_false(){
-    run is-true $1
+    run is-false $1
     assert_failure 1
 }
 @test "non-boolean-value-ABC" {
