@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 shellcheck src/bin/*
@@ -20,15 +20,15 @@ chmod 755 $TARGET/usr/bin/*
 mkdir -p $TARGET/usr/share/man/man1/
 fileList=$(cd $SOURCE/md && find *.1.md | sed 's/.md//')
 for file in $fileList; do
-  pandoc $SOURCE/md/$file.md -s -t man | gzip -9 >$TARGET/usr/share/man/man1/$file.gz
+  pandoc "$SOURCE/md/$file.md" -s -t man | gzip -9 >"$TARGET/usr/share/man/man1/$file.gz"
 done
 
 fakeroot dpkg-deb --build -Zxz $TARGET
 dpkg-name ${TARGET}.deb
 
-DEBFILE=$(ls ./*.deb)
+DEBFILE=$(basename "$(ls ./*.deb)")
 
-sha256sum "$DEBFILE" >$DEBFILE.sha256sum
-sha512sum "$DEBFILE" >$DEBFILE.sha512sum
+sha256sum "$DEBFILE" >"$DEBFILE.sha256sum"
+sha512sum "$DEBFILE" >"$DEBFILE.sha512sum"
 
 dpkg --contents "$DEBFILE"

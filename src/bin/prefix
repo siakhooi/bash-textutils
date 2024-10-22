@@ -1,22 +1,22 @@
 #!/bin/bash
 
 if [[ $# -ne 1 ]] && [[ $# -ne 2 ]]; then
-    echo "Usage: $(basename "$0") prefix [inputFile]"
-    exit 0
+  echo "Usage: $(basename "$0") prefix [inputFile]"
+  exit 0
 fi
 
 PREFIX=$1
 
 if [[ $# -eq 1 ]]; then
-    INFILE=/dev/stdin
+  INFILE=/dev/stdin
 else
-    INFILE=$2
-    if ! test -r "$INFILE" -a -f "$INFILE" ; then
-        echo "Input file $INFILE is not readable." >&2
-        exit 1
-    fi
+  INFILE=$2
+  if ! test -r "$INFILE" -a -f "$INFILE"; then
+    echo "Input file $INFILE is not readable." >&2
+    exit 1
+  fi
 fi
 
 while IFS='' read -r line; do
-    echo "$PREFIX${line}"
+  echo "$PREFIX${line}"
 done <"$INFILE"
