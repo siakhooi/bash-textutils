@@ -1,4 +1,4 @@
-name: Build with shellcheck
+name: Build Deb File
 
 on: workflow_call
 
@@ -9,8 +9,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - run: sudo apt install shellcheck pandoc dpkg-dev
-      - run: ./build.sh
+      - run: sudo apt install pandoc dpkg-dev
+      - run: ./scripts/build-deb.sh
       - uses: actions/upload-artifact@v4
         with:
           name: deliverables

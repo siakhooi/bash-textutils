@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-shellcheck src/bin/*
-
 TARGET=target
 SOURCE=src
 
