@@ -1,4 +1,9 @@
-info:
+clean:
+	rm -rf target *.deb *.sha256sum *.sha512sum *.rpm ~/rpmbuild
+build-deb: clean
+	./scripts/build-deb.sh
+build-rpm: clean
+	scripts/build-rpms.sh
 
 set-version:
 	scripts/set-version.sh
@@ -6,6 +11,8 @@ git-commit-and-push:
 	scripts/git-commit-and-push.sh
 create-release:
 	scripts/create-release.sh
+check-rpm-package:
+	rpm -qf /usr/bin/is-true
 
 prepare-on-codespace:
 	sudo apt update -y
@@ -13,9 +20,6 @@ prepare-on-codespace:
 
 clean:
 	rm -rf target *.deb *.deb.sha*sum test_helper bats-test-*.log
-
-build:
-	./build.sh
 
 run-in-container:
 	. in-container-init.sh

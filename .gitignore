@@ -3,3 +3,5 @@ target
 *.deb.sha*sum
 /bats-test-*.log
 test_helper
+*.rpm
+*.rpm.sha*sum
