@@ -4,7 +4,6 @@
 
 # NAME
 **prefix** - add a prefix to all lines of text.\
-**indent** - add a prefix to all lines of text.\
 **suffix** - add a suffix to all lines of text.\
 **is-true** - check if a value is true/yes/on/Y/T/1.\
 **is-false** - check if a value is false/no/off/N/F/0.\
@@ -12,7 +11,6 @@
 
 # SYNOPSIS
 **prefix** prefix\
-**indent** prefix\
 **suffix** suffix\
 **is-true** value\
 **is-false** value\
