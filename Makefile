@@ -1,5 +1,5 @@
 clean:
-	rm -rf target *.deb *.sha256sum *.sha512sum *.rpm ~/rpmbuild
+	rm -rf target *.deb *.sha256sum *.sha512sum *.rpm ~/rpmbuild test_helper bats-test-*.log
 build-deb: clean
 	./scripts/build-deb.sh
 build-rpm: clean
@@ -17,9 +17,6 @@ check-rpm-package:
 prepare-on-codespace:
 	sudo apt update -y
 	sudo apt install -y shellcheck pandoc fakeroot
-
-clean:
-	rm -rf target *.deb *.deb.sha*sum test_helper bats-test-*.log
 
 run-in-container:
 	. in-container-init.sh

@@ -14,10 +14,12 @@ Requires:       bash
 commands to transform line of texts.
 
 %install
-mkdir -p %{buildroot}%{_bindir}
-mkdir -p %{buildroot}%{_mandir}/man1
-install -m 0755 usr/bin/* %{buildroot}%{_bindir}
-install -m 644 usr/share/man/man1/* %{buildroot}%{_mandir}/man1
+%{__mkdir}   -v -p %{buildroot}%{_bindir}
+%{__mkdir}   -v -p %{buildroot}%{_mandir}/man1
+%{__mkdir}   -v -p %{buildroot}/usr/share/licenses/siakhooi-textutils
+%{__install} -v -m 0755 %{_topdir}/BUILD/usr/bin/* %{buildroot}%{_bindir}
+%{__install} -v -m 644  %{_topdir}/BUILD/usr/share/man/man1/* %{buildroot}%{_mandir}/man1
+%{__install} -v -m 644  %{_topdir}/BUILD/LICENSE %{buildroot}/usr/share/licenses/siakhooi-textutils
 
 %files
 %license LICENSE
@@ -34,8 +36,8 @@ install -m 644 usr/share/man/man1/* %{buildroot}%{_mandir}/man1
 %{_mandir}/man1/suffix.1.gz
 
 %changelog
-* Wed Oct 30 2024 Siak Hooi <siakhooi@gmail.com> - 1.7.4
-- create rpm
+* Mon Nov 4 2024 Siak Hooi <siakhooi@gmail.com> - 1.7.4
+- initial rpm version
 
 * Tue Oct 29 2024 Siak Hooi <siakhooi@gmail.com> - 1.7.3
 - fix workflow dependency
