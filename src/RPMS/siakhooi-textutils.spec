@@ -28,6 +28,7 @@ commands to transform line of texts.
 %{_bindir}/make-table
 %{_bindir}/prefix
 %{_bindir}/suffix
+%{_bindir}/nvl
 %{_mandir}/man1/is-false.1.gz
 %{_mandir}/man1/is-true.1.gz
 %{_mandir}/man1/make-table.1.gz
