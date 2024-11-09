@@ -1,5 +1,5 @@
 Name:           siakhooi-textutils
-Version:        1.7.5
+Version:        1.8.0
 Release:        1%{?dist}
 Summary:        commands to transform line of texts.
 
@@ -36,6 +36,9 @@ commands to transform line of texts.
 %{_mandir}/man1/suffix.1.gz
 
 %changelog
+* Sat Nov 9 2024 Siak Hooi <siakhooi@gmail.com> - 1.8.0
+- add nvl
+
 * Mon Nov 4 2024 Siak Hooi <siakhooi@gmail.com> - 1.7.5
 - fix man page
 

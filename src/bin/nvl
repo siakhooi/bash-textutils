@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for arg in "$@"; do
+  if [ -n "$arg" ]; then
+    echo "$arg"
+    break
+  fi
+done
