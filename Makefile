@@ -1,12 +1,13 @@
 clean:
 	rm -rf target *.deb *.sha256sum *.sha512sum *.rpm ~/rpmbuild test_helper bats-test-*.log
-all-deb: clean set-version build-deb
-all-rpm: clean set-version build-rpm
+all-deb: clean set-version shellcheck build-deb
+all-rpm: clean set-version shellcheck build-rpm
 build-deb:
 	./scripts/build-deb.sh
 build-rpm:
 	scripts/build-rpms.sh
-
+shellcheck:
+	scripts/shellcheck.sh
 set-version:
 	scripts/set-version.sh
 commit:

@@ -23,4 +23,4 @@ fi
 
 readonly url=$1
 readonly title=$2
-printf '\e]8;;%s\e\\%s\e]8;;\e\\' "$url" "$title"
+printf "%b" "\e]8;;${url}\e\\${title}\e]8;;\e\\"
