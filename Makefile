@@ -1,15 +1,17 @@
 clean:
 	rm -rf target *.deb *.sha256sum *.sha512sum *.rpm ~/rpmbuild test_helper bats-test-*.log
-build-deb: clean
+all-deb: clean set-version build-deb
+all-rpm: clean set-version build-rpm
+build-deb:
 	./scripts/build-deb.sh
-build-rpm: clean
+build-rpm:
 	scripts/build-rpms.sh
 
 set-version:
 	scripts/set-version.sh
-git-commit-and-push:
+commit:
 	scripts/git-commit-and-push.sh
-create-release:
+release:
 	scripts/create-release.sh
 check-rpm-package:
 	rpm -qf /usr/bin/is-true

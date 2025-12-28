@@ -1,5 +1,5 @@
 Name:           siakhooi-textutils
-Version:        1.8.0
+Version:        1.9.0
 Release:        1%{?dist}
 Summary:        commands to transform line of texts.
 
@@ -26,6 +26,7 @@ commands to transform line of texts.
 %{_bindir}/is-false
 %{_bindir}/is-true
 %{_bindir}/make-table
+%{_bindir}/hyperlink
 %{_bindir}/prefix
 %{_bindir}/suffix
 %{_bindir}/nvl
@@ -37,6 +38,9 @@ commands to transform line of texts.
 %{_mandir}/man1/suffix.1.gz
 
 %changelog
+* Sun Dec 28 2025 Siak Hooi <siakhooi@gmail.com> - 1.9.0
+- add hyperlink
+
 * Sat Nov 9 2024 Siak Hooi <siakhooi@gmail.com> - 1.8.0
 - add nvl
 
